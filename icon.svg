@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="256" y2="256" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#16213e"/>
+    </linearGradient>
+    <linearGradient id="coral" x1="80" y1="60" x2="176" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ff6b6b"/>
+      <stop offset="50%" stop-color="#ee5a24"/>
+      <stop offset="100%" stop-color="#f0932b"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="100" y1="80" x2="160" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#5865f2"/>
+      <stop offset="100%" stop-color="#43b581"/>
+    </linearGradient>
+  </defs>
+  <!-- Background rounded square -->
+  <rect width="256" height="256" rx="48" fill="url(#bg)"/>
+  <!-- Coral branch structure -->
+  <!-- Main trunk -->
+  <path d="M128 190 L128 110" stroke="url(#coral)" stroke-width="10" stroke-linecap="round"/>
+  <!-- Left branches -->
+  <path d="M128 150 L95 120" stroke="url(#coral)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M95 120 L80 95" stroke="url(#coral)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M95 120 L70 115" stroke="url(#coral)" stroke-width="5" stroke-linecap="round"/>
+  <path d="M128 130 L105 105" stroke="url(#coral)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M105 105 L95 80" stroke="url(#coral)" stroke-width="4" stroke-linecap="round"/>
+  <!-- Right branches -->
+  <path d="M128 145 L160 118" stroke="url(#coral)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M160 118 L178 96" stroke="url(#coral)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M160 118 L185 112" stroke="url(#coral)" stroke-width="5" stroke-linecap="round"/>
+  <path d="M128 125 L152 100" stroke="url(#coral)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M152 100 L162 78" stroke="url(#coral)" stroke-width="4" stroke-linecap="round"/>
+  <!-- Relay signal dots on branch tips -->
+  <circle cx="80" cy="95" r="5" fill="#43b581" opacity="0.9"/>
+  <circle cx="70" cy="115" r="4" fill="#43b581" opacity="0.8"/>
+  <circle cx="95" cy="80" r="4" fill="#43b581" opacity="0.85"/>
+  <circle cx="178" cy="96" r="5" fill="#5865f2" opacity="0.9"/>
+  <circle cx="185" cy="112" r="4" fill="#5865f2" opacity="0.8"/>
+  <circle cx="162" cy="78" r="4" fill="#5865f2" opacity="0.85"/>
+  <!-- Relay arrows / signal arcs (left to right) -->
+  <path d="M82 88 Q100 65 118 72" stroke="#43b581" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <path d="M138 72 Q156 65 174 90" stroke="#5865f2" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <!-- Central relay node -->
+  <circle cx="128" cy="110" r="8" fill="url(#glow)" opacity="0.9"/>
+  <circle cx="128" cy="110" r="4" fill="#fff" opacity="0.8"/>
+</svg>
